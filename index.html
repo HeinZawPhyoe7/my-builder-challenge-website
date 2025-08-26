@@ -7,18 +7,15 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main id="header">
-      <div class="container">
-        <nav>
-          <img src="" alt="" class="logo" />
-          <ul>
-            <li><a href=""></a>Home</li>
-            <li><a href=""></a>About</li>
-            <li><a href=""></a>Projects</li>
-            <li><a href=""></a>Contact</li>
-          </ul>
-        </nav>
-      </div>
+    <main>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
       <section class="hero">
         <img src="Profile.jpg" alt="Hein Zaw Phyoe" class="profile-photo" />
         <h1>Hein Zaw Phyoe</h1>
@@ -60,9 +57,10 @@
           <div class="fact-card">
             <h4>💡 Fun Project</h4>
             <p>
-              This website is proudly hosted on <strong>Amazon S3</strong> with
-              <strong>CloudFront</strong> for fast, global delivery — my first
-              step into cloud-powered web development!
+              This website is proudly hosted on
+              <strong>Amazon S3</strong> with <strong>CloudFront</strong> for
+              fast, global delivery — my first step into cloud-powered web
+              development!
             </p>
           </div>
 
@@ -116,6 +114,7 @@
           <button type="submit" class="contact-submit-btn">Send Message</button>
         </form>
       </section>
+
       <!-- END CONTACT FORM SECTION -->
     </main>
 
@@ -125,7 +124,8 @@
 
     <script>
       // Contact form handler - Sends form data to AWS Lambda
-      const LAMBDA_URL = "YOUR_LAMBDA_FUNCTION_URL_HERE"; // Replace with your Function URL
+      const LAMBDA_URL =
+        "https://kdqtx3rau6utpp4vykvuhltuc40gwoqd.lambda-url.ap-southeast-2.on.aws/"; // Replace with your Function URL
 
       document.addEventListener("DOMContentLoaded", function () {
         const form = document.querySelector(".contact-form-container");
